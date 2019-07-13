@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/maintry">
+    <TextView
+        android:id="@+id/AttendanceText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradientbackground"
+        android:gravity="center"
+        android:text="Attendance Detail"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/childAttendanceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttttons"
+        android:layout_below="@+id/AttendanceText"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/buttttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:minHeight="55dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncanclAttendance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:minHeight="55dp"
+            android:text="@string/cancel"
+            android:textColor="@color/TextDarkColor" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btnSubmitAttendance"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/btn_close_design"-->
+            <!--android:minHeight="55dp"-->
+            <!--android:text="Save"-->
+            <!--android:textColor="@color/textcolor" />-->
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/maintry"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butttonsAnnounce"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/addAnnonce"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="top"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/gradientbackground"
+                android:gravity="center"
+                android:text="Give Answer"
+                android:textColor="@color/textcolor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+
+                android:id="@+id/w_answer"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/textborder"
+                android:gravity="top"
+                android:overScrollMode="always"
+                android:isScrollContainer="true"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:hint="@string/writeAnnouncement"
+                android:inputType="textMultiLine"
+                android:maxLines="8"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/Skype"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/recordAnnouncement"
+                android:textSize="16sp" />
+            <Chronometer
+                android:id="@+id/endtime"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
+
+            <RelativeLayout
+                android:id="@+id/seekbarControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnAnnoncementcancel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp">
+
+                <SeekBar
+                    android:id="@+id/SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingStart="35dp"
+                android:paddingLeft="35dp"
+                android:paddingEnd="35dp">
+                <ImageView
+                    android:id="@+id/play"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/play" />
+
+                <ImageView
+                    android:id="@+id/recording"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/recording" />
+
+                <ImageView
+                    android:id="@+id/stop"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@mipmap/stop" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/butttonsAnnounce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/testAd"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:minHeight="50dp"
+            android:text="@string/cancel"
+            android:textColor="@color/botomcolor" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_close_design"
+            android:minHeight="50dp"
+            android:text="@string/send"
+            android:textColor="@color/textcolor" />
+    </LinearLayout>
+
+
+</RelativeLayout>

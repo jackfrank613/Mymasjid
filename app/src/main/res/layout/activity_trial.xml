@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@mipmap/maintry"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tarilReg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/gradientbackground"
+                android:gravity="center"
+                android:text="@string/trailReg"
+                android:textColor="@color/textcolor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/TrailfirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textCursorDrawable="@color/textcolor"
+                android:background="@drawable/textborder"
+                android:hint="@string/FirstName"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+
+            <EditText
+                android:id="@+id/TrailsurName"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@color/textcolor"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textborder"
+                android:hint="@string/surname"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+
+            <EditText
+                android:id="@+id/TrailEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textCursorDrawable="@color/textcolor"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textborder"
+                android:hint="Email"
+                android:inputType="textWebEmailAddress"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                android:hint="Please,verify your phone number."/>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/whitebutton"
+                android:layout_height="45dp">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:textCursorDrawable="@color/textcolor"
+
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/ccp"
+                        ads:ccp_textColor="@color/textcolor"
+                        ads:ccp_hideNameCode="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/phone_number_edt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textCursorDrawable="@color/textcolor"
+
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@color/hintcolor"
+                        android:background="@color/colortransparent"
+                        android:hint="phone"
+                        android:inputType="phone"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/Trailpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textCursorDrawable="@color/textcolor"
+                android:singleLine="true"
+                android:background="@drawable/textborder"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                app:passwordToggleEnabled="true"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+            <EditText
+                android:id="@+id/TrailREpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textCursorDrawable="@color/textcolor"
+                android:background="@drawable/textborder"
+                android:hint="Conform Password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                app:passwordToggleEnabled="true"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+            <EditText
+                android:id="@+id/TrailpostCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textCursorDrawable="@color/textcolor"
+                android:background="@drawable/textborder"
+                android:hint="@string/postcode"
+                android:singleLine="true"
+                android:inputType="textCapCharacters"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+            <EditText
+                android:id="@+id/TrailHouseNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textCursorDrawable="@color/textcolor"
+                android:background="@drawable/textborder"
+                android:hint="@string/Houseno"
+                android:inputType="textPostalAddress"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+
+            <Button
+                android:id="@+id/trailSelectMoqS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_close_design"
+                android:entries="@array/MasjidList"
+                android:text="Search Masjid"
+                android:textColor="@color/textcolor"
+                android:minHeight="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:popupBackground="@color/Skype">
+
+            </Button>
+            <TextView
+                android:id="@+id/Trailmasjidtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textborder"
+                android:hint="Masjid"
+                android:inputType="textPostalAddress"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnTrailcancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textborder"
+                    android:gravity="center"
+                    android:minHeight="55dp"
+                    android:padding="10dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/botomcolor"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnTrailregister"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_close_design"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:minHeight="55dp"
+                    android:text="Register"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

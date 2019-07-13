@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/maintry"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/SelectMoasque"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@color/textcolor"
+
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:background="@drawable/whitebutton"
+            android:inputType="textCapCharacters"
+            android:minHeight="50dp"
+            android:minWidth="300dp"
+            android:textColor="@color/textcolor"
+            android:hint="Post Code"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="21sp">
+        </EditText>
+
+        <Button
+            android:id="@+id/search_next"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SelectMoasque"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_close_design"
+            android:minHeight="55dp"
+            android:padding="10dp"
+            android:text="Search"
+            android:textColor="@color/textcolor" />
+        <TextView
+            android:id="@+id/txt_masjid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textborder"
+            android:hint="Masjid"
+            android:inputType="textPostalAddress"
+            android:layout_below="@+id/search_next"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/botomcolor"
+            android:textColorHint="@color/hintcolor" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/c_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:minHeight="55dp"
+            android:padding="10dp"
+            android:text="Cancel"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_close_design"
+            android:gravity="center"
+            android:minHeight="55dp"
+            android:padding="10dp"
+            android:text="Next"
+            android:textColor="@color/textcolor" />
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

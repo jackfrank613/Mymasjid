@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/maintry"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtsalah"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/gradientbackground"
+                android:gravity="center"
+                android:text="Add Masjid Committee"
+                android:textColor="@color/textcolor"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif" />
+
+
+            <Spinner
+                android:id="@+id/SelectPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_close_design"
+                android:entries="@array/designationlist"
+                android:minHeight="60dp"
+                android:padding="10dp"
+                android:popupBackground="@color/Skype"
+                android:textAlignment="center"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+
+
+            <EditText
+                android:id="@+id/NameOfPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/whitebutton"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:minHeight="55dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hintcolor" />
+
+
+            <EditText
+                android:id="@+id/ContectOfPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/whitebutton"
+                android:hint="Enter Contact #"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:minHeight="55dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hintcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnaddCommitteeCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textborder"
+                    android:minHeight="55dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/TextDarkColor" />
+
+                <Button
+                    android:id="@+id/btnaddCommitteeUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_close_design"
+                    android:minHeight="55dp"
+                    android:text="@string/Update"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

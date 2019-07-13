@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/maintry">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textHelp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/gradientbackground"
+            android:gravity="center"
+            android:text="@string/helpus"
+            android:textColor="@color/textcolor"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"/>
+
+
+        <RelativeLayout
+            android:id="@+id/textayout"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textHelp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/helpusOne"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:gravity="center"
+                android:text="@string/helpusTwo"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Just £6 6 month"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text12"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text11"
+                android:gravity="center"
+                android:text="Just £12 12 month"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text12"
+                android:gravity="center"
+                android:text="@string/helpusThree"
+                android:textColor="@color/textcolor" />
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_above="@+id/testAd"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTrail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebutton"
+                android:text="@string/btnTrail"
+                android:minHeight="55dp"
+                android:textAllCaps="false"
+                android:textColor="@color/textcolor" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:minHeight="55dp"
+                android:background="@drawable/btn_close_design"
+                android:text="@string/btnregiste"
+                android:textAllCaps="false"
+                android:textColor="@color/textcolor" />
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/testAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            android:layout_alignParentBottom="true"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</LinearLayout>

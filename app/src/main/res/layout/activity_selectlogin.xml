@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/maintry">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/testAd"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:src="@mipmap/bissmillah" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qutation"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/MasjidLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:layout_gravity="center"
+            android:minWidth="260dp"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:text="Login as Masjid"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/UserLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/whitebutton"
+            android:minWidth="260dp"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:text="Login as User"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You dont have an account?"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registerhere"
+            android:id="@+id/registerhere"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/testAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
+

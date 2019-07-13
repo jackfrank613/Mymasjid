@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#064506</color>
+    <color name="colorPrimaryDark">#018903</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backgroundcolor">#238607</color>
+    <color name="textcolor">#FFFFFF</color>
+    <color name="botomcolor">#FFFFFF</color>
+    <color name="pink">#2da90a</color>
+    <color name="trail">#fdec3422</color>
+    <color name="headingGreen">#3B7A20</color>
+    <color name="colortransparent">#00000000</color>
+    <color name="hintcolor">#abc1c9</color>
+    <color name="DarkBlue">#006181</color>
+    <color name="colorControlNormal">#FFFFFF</color>
+    <color name="colorControlActivated">#FFFFFF</color>
+    <color name="traaay">#A5DC86</color>
+    <color name="leftColor">#9addfc</color>
+    <color name="toast_background">#2e2e2e</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorError">#ff6460</color>
+    <color name="colorInfo">#1E90FF</color>
+    <color name="colorSuccess">#78c847</color>
+    <color name="colorWarning">#ffd859</color>
+
+    <color name="Skype">#00aff0</color>
+
+    <color name="pick">#e4e3e3</color>
+
+    <color name="TextDarkColor">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <color name="headerSkype">#13befd</color>
+</resources>

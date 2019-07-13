@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/headerSkype</item>
+        <item name="colorPrimaryDark">@color/Skype</item>
+        <item name="colorAccent">@color/Skype</item>
+        <item name="android:textColor">@color/pick</item>
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
+        <item name="android:listViewWhiteStyle">@color/textcolor</item>
+        <item name="colorBackgroundFloating">@color/textcolor</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+    </style>
+    <style name="WhiteCheck">
+        <item name="colorAccent">#fff</item>
+    </style>
+    <style name="ListFont" parent="@android:style/Widget.ListView">
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="question_dialog_title" parent="android:Widget.TextView">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#ffffff</item>
+
+
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:popupBackground">@android:color/black</item>
+    </style>
+</resources>

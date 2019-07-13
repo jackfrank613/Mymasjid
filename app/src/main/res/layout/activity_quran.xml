@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_quran"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradientbackground"
+        android:gravity="center"
+        android:text="Quran"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/txt_quran"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_quran"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnChildcancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:background="@drawable/btn_close_design"
+            android:text="@string/cancel"
+            android:textColor="@color/textcolor" />
+    </RelativeLayout>
+
+</RelativeLayout>

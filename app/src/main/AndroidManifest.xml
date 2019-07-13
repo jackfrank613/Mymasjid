@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tech_sim.mymasjidapp"
+    android:versionCode="2"
+    android:versionName="1.1">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.turkish.godwork.flagmingonet.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+<application
+    android:allowBackup="true"
+    android:label="@string/app_name"
+    android:icon="@drawable/salahicon"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    android:usesCleartextTraffic="true"
+    tools:ignore="GoogleAppIndexingWarning"
+    android:name=".utils.PreferenceManager"
+    tools:replace="android:icon"
+    tools:node="merge"
+
+    tools:targetApi="m">
+    <meta-data android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyBAxOV3wQuC17adjQbrMnU4rhVZMtbDEkU" />
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+    <activity android:name=".activity.MainActivity"
+        android:screenOrientation="portrait">
+
+    </activity>
+    <activity android:name=".activity.SplashScreen"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".activity.Visitors"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.RegistrationMainScreen"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.VisitorMasjidMapView"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.VisitorActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.SalahActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.VistorCharity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MasjidRegistration"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.Masjid"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.HepUs"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.UserDashboard"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.UserMasjidMapViewActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ParmanatRegistartion"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.PhoneVerify"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MasjidMapviewActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.TrialRegister"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.SelectLogin"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.Login"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.QuranActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.SettingUser"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.PayFee"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ViewMasjidCommit"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.Announcement"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.AnnouncementDetail"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.UserQuestionActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MasjidAnswerActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MasjidAnswer"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ManageChildActivit"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.AddChildActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ViewChildUser"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MasjidSettin"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.SalahMasjidPanel"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.AddSalahActivity"
+         android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ViewSalahTime"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.UpdateSalahTime"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MasjidAnnouncementActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.NewAnnouncementActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MasjidAnnouncement"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ManageAnsQuestionPanel"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.QuetionDetailActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.GiveAnswerActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ManageChildren"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ChildrenAddActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ViewChildActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ReportChildActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.AttendanceActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.StudentActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ChildAttendanceActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ActivityGolive"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MajidManageActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ViewMasjidComitte"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MasjidCommittee"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.Help"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.AttendanceHistory"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.Expense"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.MasjidExpenseActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ViewExpense"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ManageExpenseActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ExpenseHistoryActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.Charity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.PayFeeForApp"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.PayForChildActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ChildPayfeeActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.RegularUserRepayActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ChildDescriptionUser"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ForgotPassword"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.PayByCash"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.HistoryPayFeeActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.UserAnnounceSeeActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".activity.AnnonceDetailer"
+        android:screenOrientation="portrait"/>
+    <service
+        android:name=".notification.MyFirebaseMessagingService">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+        </intent-filter>
+    </service>
+    <service android:name=".notification.MyFirebaseInstanceIDService">
+        <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+        </intent-filter>
+    </service>
+    <service android:name=".ScheduleService"/>
+    <receiver android:enabled="true"
+        android:exported="true"
+        android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+        android:name=".BootBroadcast" >
+        <intent-filter >
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+            <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </receiver>
+    <service
+        android:name=".NotificationService"
+        android:label="@string/app_name">
+        <intent-filter>
+            <action android:name="your.app.domain.NotificationService" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </service>
+    <service android:name=".service.MasjidTimeService" />
+
+    <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="ca-app-pub-3940256099942544~3347511713" />
+    <uses-library android:required="true" android:name="com.google.android.maps" />
+    <uses-library
+        android:name="org.apache.http.legacy"
+        android:required="false" />
+    <receiver android:name=".notification.MyBroadcastReceiver">
+        <intent-filter>
+            <action android:name="Block User" />
+        </intent-filter>
+    </receiver>
+</application>
+
+</manifest>

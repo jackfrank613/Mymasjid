@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/maintry">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/announcementText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/gradientbackground"
+                android:gravity="center"
+                android:text="Go Live"
+                android:textColor="@color/textcolor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_below="@+id/announcementText">
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="240dp"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="40dp"
+                    android:src="@mipmap/bissmillah"/>
+                <EditText
+                    android:id="@+id/GoLiveURL"
+                    android:layout_below="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/whitebutton"
+                    android:minHeight="55dp"
+                    android:singleLine="true"
+                    android:inputType="textUri"
+                    android:hint="PasteYoutube Live Link"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="500dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <Button
+                    android:id="@+id/btncancelLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:minHeight="55dp"
+                    android:background="@drawable/textborder"
+                    android:text="@string/cancel"
+                    android:textColor="@color/textcolor" />
+
+                <Button
+                    android:id="@+id/btnsendLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="55dp"
+                    android:background="@drawable/btn_close_design"
+                    android:text="Send"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

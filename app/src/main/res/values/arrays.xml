@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="namazName">
+        <item>Fajar</item>
+        <item>Zohr</item>
+        <item>Asr</item>
+        <item>Maghrib</item>
+        <item>Isha</item>
+        <item>Juma</item>
+        <item>Tahajud</item>
+    </string-array>
+    <string-array name="MasjidList" >
+        <item>Jamia Masjid</item>
+        <item>Norani Masjid</item>
+        <item>Sadique Masjid</item>
+        <item>Sahi Jamia Masjid</item>
+        <item>Al_Aqsa Masjid</item>
+    </string-array>
+    <string-array name="charityType" >
+        <item>Orphan</item>
+        <item>Masjid</item>
+        <item>Needy</item>
+        <item>Kashmir</item>
+        <item>Dam</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="AnnouncementTypes" >
+        <item>Janazah</item>
+        <item>Mahfil</item>
+        <item>Genral</item>
+    </string-array>
+    <string-array name="bankName" >
+    <item>XYZ Bank</item>
+    <item>ABC Bank</item>
+    <item>MNO Bank</item>
+    </string-array>
+    <string-array name="designationlist">
+    <item>President</item>
+    <item>Vice President</item>
+    <item>Treasurer</item>
+    <item>Secretary</item>
+    <item>Legal Advisor</item>
+</string-array>
+    <string-array name="ChildName" >
+        <item>Ahmed</item>
+        <item>Ammar</item>
+        <item>Naveed</item>
+        <item>Khulaid</item>
+        <item>Ahmed</item>
+        <item>Bilal</item>
+        <item>Ali</item>
+    </string-array>
+
+</resources>

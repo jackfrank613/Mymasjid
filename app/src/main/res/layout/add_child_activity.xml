@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/maintry"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradientbackground"
+        android:gravity="center"
+        android:text="@string/ADDCHILD"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/mosquenote"
+            android:textColor="@color/TextDarkColor"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/pastePin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pin"
+            android:padding="10dp"
+            android:minHeight="55dp"
+            android:selectAllOnFocus="true"
+            android:textIsSelectable="true"
+            android:background="@drawable/whitebutton"
+            android:inputType="text"
+            android:textColor="@color/TextDarkColor"
+            android:textColorHint="@color/hintcolor"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/pastechild"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Child Name"
+            android:padding="10dp"
+            android:minHeight="55dp"
+            android:selectAllOnFocus="true"
+            android:textIsSelectable="true"
+            android:background="@drawable/whitebutton"
+            android:inputType="text"
+            android:textColor="@color/TextDarkColor"
+            android:textColorHint="@color/hintcolor"
+            >
+        </EditText>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnChildcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:minHeight="55dp"
+            android:background="@drawable/textborder"
+            android:text="@string/cancel"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/btnChildUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="55dp"
+            android:background="@drawable/btn_close_design"
+            android:text="Save"
+            android:textColor="@color/textcolor" />
+    </LinearLayout>
+
+</RelativeLayout>

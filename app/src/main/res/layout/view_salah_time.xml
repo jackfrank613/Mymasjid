@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/maintry">
+    <TextView
+        android:id="@+id/viewSalahTime"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradientbackground"
+        android:gravity="center"
+        android:text="View Salah Time"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/viewSalahTimeList"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/viewSalahTime"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btncancellViewSalahTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_close_design"
+            android:text="@string/cancel"
+            android:textColor="@color/textcolor"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

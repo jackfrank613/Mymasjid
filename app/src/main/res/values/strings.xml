@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Masjid App</string>
+    <string name="Janaza">Janaza | جنازہ</string>
+    <string name="Time">6:30AM</string>
+    <string name="btnnext">Next</string>
+    <string name="Description">Janaza Descriptio here..............</string>
+    <string name="Salam">Assalamu Alaikum</string>
+    <string name="regAsMassjid">Register As Masjid</string>
+    <string name="FirstName">First Name</string>
+    <string name="surname">Sur Name</string>
+    <string name="postcode">Post Code</string>
+    <string name="Houseno">House #</string>
+    <string name="cancel">Cancel</string>
+    <string name="masjid">Please select the masjid you want</string>
+    <string name="register">Register</string>
+    <string name="trailReg">Try it for 7 Days</string>
+    <string name="regAsUser">Register As User</string>
+    <string name="damytext">We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that’s right for you. We have a number of different teams within our agency that specialise in different areas.</string>
+    <string name="donationThanks">"May Allah reward you immensely,
+We appreciate every penny.
+"</string>
+    <string name="addChild">"Your child has been added."</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="IntroDescriptionOne">"On behalf of the Masjid Committee, we
+Would like to say.
+        "
+</string>
+    <string name="IntroDescriptionTwo">Jazakallahu Khair!</string>
+    <string name="IntroDescriptionThree">"
+        “Allah Ta’ala will grant his shade to seven
+(types) of people on the day when there will be
+No shade besides His shade(Among the seven)
+One is a man whose heart is attached to the
+Masjid.”[Bukhari,Muslim].
+"</string>
+    <string name="IntroDescriptionFive">"
+        By downloading our app you have taken
+A step towards being amongst those whom
+Allah will shade on the Day of Judgment
+Insha Allah."</string>
+
+    <string name="IntroDescriptionFour">"
+    “Whenever anyone of you is in prayer,
+    He is speaking in private to his Lord and so
+    He should neither spit in front of him
+    Nor on his right side but to his
+    Left side under his left foot”
+        [Sahih Bukhari Shreef]."</string>
+
+    <string name="helpus">Help Us</string>
+    <string name="btnTrail">Try it for 7 Days</string>
+    <string name="btnregiste">Register</string>
+
+    <string name="helpusOne">"Help us to bring the community closer to
+Allah by Registering your app and donating
+
+"</string>
+    <string name="helpusTwo">"Just £1 a month
+
+"</string>
+    <string name="helpusThree">"This will help towards providing this new
+Service to the community and will allow
+us to make this service better
+and better.
+
+May Allah Reward you.
+"</string>
+    <string name="sortcode">Sort Code</string>
+    <string name="AccountNo">Account #</string>
+    <string name="ammount">£   </string>
+    <string name="monthely">Monthely</string>
+    <string name="mosqueName">Masjid Name</string>
+    <string name="masjidcameti">Masjid Committee</string>
+    <string name="masjidName">Jamia Masjid Noor</string>
+    <string name="masjidAdress">2a Capper Street, Tunstall,Stoke on Trent, St6 5th</string>
+    <string name="masjidpresedant">President</string>
+    <string name="presedantName">Mohammed Hafiz</string>
+    <string name="masjidvoicePresedant">Vice President</string>
+    <string name="voicePresedantName">Mohammed Imran</string>
+    <string name="masjidtreasurer">Treasurer</string>
+    <string name="treasurerName">Rizwan Ahmed</string>
+    <string name="masjidsecarty">Secretary</string>
+    <string name="secetaryName">Jameel Khan</string>
+    <string name="LegalAdviser">Legal Adviser</string>
+    <string name="AdviserName">Rizwan Ahmed</string>
+    <string name="ADDCHILD">Add Child</string>
+    <string name="childName">Child Name</string>
+    <string name="pin">Pin</string>
+    <string name="update" />
+    <string name="Update">Update</string>
+    <string name="AskAQUestion">Ask a Question</string>
+    <string name="writeQuestion">Write Your Question here</string>
+    <string name="send">Send</string>
+    <string name="givecharity">Every Little Helps the Masjid</string>
+    <string name="descriptionCharity">"“Whoever builds a mosque for Allah, then
+Allah will build for him a house like it in
+Paradise.”[Bukhari,Muslim]
+"</string>
+    <string name="donate">Donate</string>
+    <string name="savedetail">Save Card Details</string>
+    <string name="nameoncard">Name On Card</string>
+    <string name="cardnumber">Card Number</string>
+    <string name="answer">Answer | جواب</string>
+
+    <string name="question">Question | سوالات</string>
+    <string name="masage">7 days left for registration</string>
+    <string name="close">x Close</string>
+    <string name="regcomplete">May Allah reward you.</string>
+    <string name="charitythanka">\"May Allah reward you immensely. We appreciate every penny. \"</string>
+    <string name="tahajad">"Fajar
+فجر"</string>
+    <string name="fajar">"Zohr
+ظھر"</string>
+    <string name="Zuhar">"Asr
+عصر"</string>
+    <string name="Asar">"Maghrib
+مغرب"</string>
+    <string name="Maghrab">"Isha
+عشاء"</string>
+    <string name="Isha">"Juma
+جمعہ"</string>
+    <string name="Juma">"Tahajud
+تھجد"</string>
+    <string name="StartTime">Start Time | وقت آغاز</string>
+    <string name="JammahTime">Jammah Time | جماعت</string>
+    <string name="EndTime">End Time | وقت اختتام</string>
+    <string name="ExpDate">Exp Date</string>
+    <string name="CVVCODE">CVV Code</string>
+    <string name="classRegister">Class Register</string>
+    <string name="alreadyaccount">&lt;u>Already have an account?&lt;/u></string>
+    <string name="login">Login</string>
+    <string name="mosquenote">Note*: Please add Pin Code provided by Mosque.</string>
+    <string name="copyCode">Note*: Please Copy Pin Code and Send to Child Parent.</string>
+    <string name="logout">Logout</string>
+    <string name="Adress">Address</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="MasjidREgistration">Masjid Registration</string>
+    <string name="NAmeMasjid">Masjid Name</string>
+    <string name="AddSalah">Add Salah Time</string>
+    <string name="ViewSalahTime">View Salah Time</string>
+    <string name="AddMasjidCommitie">Add Masjid Committee</string>
+    <string name="ViewMasjidCommittee">View Masjid Committee</string>
+    <string name="AddAnnouncement">Add Announcement</string>
+    <string name="ViewAnnouncement">View Announcement</string>
+    <string name="recordQuestion">"Send an audio Question
+اپناسوال ريکاڑکريں "</string>
+
+    <string name="recordAnnouncement">"Send an audio Announcement
+اپنااعلان ريکاڑکريں "</string>
+    <string name="recordAnswer">"Send an audio Answer
+اپناجواب ريکاڑکريں "</string>
+    <string name="writeAnnouncement">Write your Announcement here.</string>
+    <string name="Answer">Answer</string>
+    <string name="WriteAnswer">Write Answer</string>
+    <string name="ViewChild">View Children</string>
+    <string name="ManageAttendance">Manage Attendance</string>
+    <string name="qutation">"Messenger of Allah (PBUH) said:
+
+“Every  religion  has distinct characteristic,
+and the distinct characteristic of Islam is modesty”
+"</string>
+    <string name="registerhere"> &lt;u>Register Here&lt;/u></string>
+    <string name="feeRequest">"“Dear Parents Your Children Fee for the
+December is late. Please Pay Fee as soon as
+Possible.” Jazak Allah
+"</string>
+    <string name="text">You can pay according to your needs to use this app.</string>
+</resources>

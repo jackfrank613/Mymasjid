@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true">
+    <ImageView
+        android:id="@+id/advertiser"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="80dp"/>
+    <ScrollView
+        android:layout_below="@+id/advertiser"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/testAd"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/massage"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="0dp"
+                android:background="@mipmap/mainheader" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/dashtop"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:src="@mipmap/salah" />
+                <TextView
+                    android:id="@+id/salahname"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/textcolor"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="zuru"/>
+
+
+                <TextView
+                    android:id="@+id/nameprayer"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Shenyang"
+                    android:textColor="@color/textcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/namaztime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:58"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/namazname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namaztime"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="61dp"
+                    android:text="Duhar"
+                    android:textColor="@color/textcolor"/>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/img"
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/Salah"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:background="@mipmap/dark"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+
+                            <ImageView
+                                android:layout_width="33dp"
+                                android:layout_height="33dp"
+                                android:src="@mipmap/salah" />
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Salah Time"
+                                android:textStyle="bold"
+                                android:textColor="@color/textcolor" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="نمازوقت"
+                                android:textColor="@color/textcolor"  />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/charity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:background="@mipmap/charity_background"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+
+                            <ImageView
+                                android:layout_width="33dp"
+                                android:layout_height="33dp"
+                                android:src="@mipmap/charity_icon" />
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Charity"
+                                android:textStyle="bold"
+                                android:textColor="@color/textcolor"  />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="صدقہ دیجےٗ"
+                                android:textColor="@color/textcolor"  />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/btnlogout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:background="@mipmap/logout_background"
+                            android:orientation="vertical"
+                            android:padding="3dp"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="33dp"
+                                android:layout_height="33dp"
+                                android:src="@mipmap/logout_icon" />
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Log out"
+                                android:textStyle="bold"
+                                android:textColor="@color/textcolor"  />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="لاگ آوٹ"
+                                android:textColor="@color/textcolor"  />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/testAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
+

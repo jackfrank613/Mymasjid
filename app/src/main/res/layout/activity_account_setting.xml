@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@mipmap/maintry"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tarilReg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/Skype"
+                android:gravity="center"
+                android:text="Account Setting"
+                android:textColor="@color/textcolor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+
+
+            <EditText
+                android:id="@+id/firstNameS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textborder"
+                android:textCursorDrawable="@color/textcolor"
+                android:hint="First Name"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/lastNameS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textborder"
+                android:textCursorDrawable="@color/textcolor"
+
+                android:hint="Last Name"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/set_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textborder"
+                android:textCursorDrawable="@color/textcolor"
+
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House No"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/HouseNoS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textborder"
+                android:textCursorDrawable="@color/textcolor"
+
+                android:hint="@string/Houseno"
+                android:textColorHint="@color/hintcolor"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textColor="@color/botomcolor"/>
+            <RelativeLayout
+                android:id="@+id/phoneverify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/hintcolor"
+                    android:layout_marginRight="45dp"
+                    android:hint="Phone Verify"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:rotation="-180"
+                    android:src="@drawable/arrow"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/whitebutton"
+                android:layout_height="45dp">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:textCursorDrawable="@color/textcolor"
+
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/ccp"
+                       ads:ccp_textColor="@color/textcolor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/phone_number_edt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textCursorDrawable="@color/textcolor"
+
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@color/hintcolor"
+                        android:background="@color/colortransparent"
+                        android:hint="phone"
+                        android:inputType="phone"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textCursorDrawable="@color/textcolor"
+
+                android:singleLine="true"
+                android:background="@drawable/textborder"
+                android:inputType="text"
+                android:padding="10dp"
+                app:passwordToggleEnabled="true"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Password"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/Newpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:background="@drawable/textborder"
+                android:textCursorDrawable="@color/textcolor"
+
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:passwordToggleEnabled="true"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm New Password"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/conpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:background="@drawable/textborder"
+                android:textCursorDrawable="@color/textcolor"
+
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:passwordToggleEnabled="true"
+                android:textColor="@color/botomcolor"
+                android:textColorHint="@color/hintcolor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Athan Audio"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bell"/>
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:text="Athan"/>
+                <RelativeLayout
+                    android:id="@+id/layout_athan1"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp">
+                <ImageView
+                    android:id="@+id/image_athan"
+                    android:layout_width="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/mute"/>
+                </RelativeLayout>
+                <CheckBox
+                    android:id="@+id/athan1"
+                    android:layout_marginLeft="120dp"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bell"/>
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:text="Athan2"/>
+                <RelativeLayout
+                    android:id="@+id/layout_athan2"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp">
+                <ImageView
+                    android:id="@+id/image_athan2"
+                    android:layout_width="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="20dp"
+                    android:visibility="gone"
+
+                    android:src="@drawable/mute"/>
+                </RelativeLayout>
+                <CheckBox
+                    android:id="@+id/athan2"
+                    android:layout_marginLeft="120dp"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bell"/>
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:text="Athan3"/>
+                <RelativeLayout
+                    android:id="@+id/layout_athan3"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp">
+                <ImageView
+                    android:id="@+id/image_athan3"
+                    android:layout_width="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/mute"/>
+                </RelativeLayout>
+                <CheckBox
+                    android:id="@+id/athan3"
+                    android:layout_marginLeft="120dp"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btncancelsetings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textborder"
+                    android:gravity="center"
+                    android:minHeight="55dp"
+                    android:padding="10dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/botomcolor"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnsavesettingsUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_close_design"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:minHeight="55dp"
+                    android:text="Save"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

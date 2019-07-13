@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/maintry"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/salahbutton"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/detailSalah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtsalah"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/gradientbackground"
+                    android:gravity="center"
+                    android:text="Salah Times"
+                    android:textColor="@color/textcolor"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/faja"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/backgroundcolor"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColorHighlight="@color/Skype"
+                            android:text="@string/tahajad"
+                            android:textColor="@color/botomcolor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/zhor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/backgroundcolor"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/fajar"
+                            android:textColor="@color/botomcolor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/asr"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="@drawable/backgroundcolor"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/Zuhar"
+                            android:textColor="@color/botomcolor"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/maghrib"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/backgroundcolor"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/Asar"
+                            android:textColor="@color/botomcolor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/isha"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/backgroundcolor"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/Maghrab"
+                            android:textColor="@color/botomcolor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/juma"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="@drawable/backgroundcolor"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/Isha"
+                            android:textColor="@color/botomcolor"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tahajiud"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/backgroundcolor"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/Juma"
+                            android:textColor="@color/botomcolor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:textColor="@color/botomcolor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:textColor="@color/botomcolor"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/Hidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/headerSkype"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:padding="5dp"
+                            android:text="@string/StartTime"
+                            android:textColor="@color/botomcolor" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/textcolor" />
+
+                        <TextView
+                            android:id="@+id/startTimetext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="5dp"
+                            android:textColor="@color/botomcolor" />
+
+                        <!--<View-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/textcolor" />-->
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:src="@android:drawable/ic_lock_silent_mode_off" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="4"
+                            android:padding="5dp"
+                            android:text="@string/JammahTime"
+                            android:textColor="@color/botomcolor" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/textcolor" />
+
+                        <TextView
+                            android:id="@+id/jammahTimetext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:padding="5dp"
+                            android:textColor="@color/botomcolor" />
+
+                        <!--<View-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/textcolor" />-->
+
+                        <!--<ImageView-->
+                        <!--android:id="@+id/alarm"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:src="@android:drawable/ic_lock_silent_mode_off" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:padding="5dp"
+                            android:text="@string/EndTime"
+                            android:textColor="@color/botomcolor" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/textcolor" />
+
+                        <TextView
+                            android:id="@+id/endTimetext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="5dp"
+                            android:textColor="@color/botomcolor" />
+
+                        <!--<View-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/textcolor" />-->
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:src="@android:drawable/ic_lock_silent_mode_off"/>-->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/salahbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/salahcancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:minHeight="55dp"
+            android:background="@drawable/textborder"
+            android:text="Cancel"
+            android:textColor="@color/botomcolor" />
+    </LinearLayout>
+
+</RelativeLayout>

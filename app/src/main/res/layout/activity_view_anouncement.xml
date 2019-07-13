@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/maintry">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/announcementText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradientbackground"
+            android:gravity="center"
+            android:text="Announcement"
+            android:textColor="@color/textcolor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/announcement"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/announcementText"
+            android:layout_above="@+id/btncancdeeel"
+            android:layout_centerInParent="true">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btncancdeeel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/testAd"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_close_design"
+            android:minHeight="55sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/cancel"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

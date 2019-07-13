@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/maintry">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tarilReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/gradientbackground"
+                    android:gravity="center"
+                    android:text="@string/MasjidREgistration"
+                    android:textColor="@color/textcolor"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:layout_below="@+id/tarilReg"
+                    android:id="@+id/MasjidName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="35dp"
+                    android:textCursorDrawable="@color/textcolor"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/whitebutton"
+                    android:hint="@string/NAmeMasjid"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+                <EditText
+                    android:layout_below="@+id/MasjidName"
+                    android:id="@+id/MasjidEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textCursorDrawable="@color/textcolor"
+
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textborder"
+                    android:hint="@string/Email"
+                    android:inputType="textWebEmailAddress"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:textColor="@color/botomcolor"
+                    android:textColorHint="@color/hintcolor" />
+                <EditText
+                    android:layout_below="@+id/MasjidEmail"
+                    android:id="@+id/MasjidPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@color/textcolor"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textborder"
+                    android:hint="@string/Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/botomcolor"
+                    android:textColorHint="@color/hintcolor" />
+                <EditText
+                    android:layout_below="@+id/MasjidPass"
+                    android:id="@+id/MasjidRePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@color/textcolor"
+
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textborder"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/botomcolor"
+                    android:textColorHint="@color/hintcolor" />
+                <EditText
+                    android:layout_below="@+id/MasjidRePass"
+                    android:id="@+id/MasjidPostCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textCursorDrawable="@color/textcolor"
+
+                    android:layout_marginBottom="10dp"
+                    android:singleLine="true"
+                    android:background="@drawable/whitebutton"
+                    android:hint="@string/postcode"
+                    android:inputType="textCapCharacters"
+                    android:padding="10dp"
+                    android:textColor="@color/botomcolor"
+                    android:textColorHint="@color/hintcolor" />
+                <EditText
+                    android:layout_below="@+id/MasjidPostCode"
+                    android:id="@+id/MasjidAdresss"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="top"
+                    android:textCursorDrawable="@color/textcolor"
+
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textborder"
+                    android:hint="@string/Adress"
+                    android:padding="10dp"
+                    android:maxLines="6"
+                    android:inputType="textMultiLine"
+                    android:singleLine="false"
+                    android:textColor="@color/botomcolor"
+                    android:textColorHint="@color/hintcolor"
+                    />
+                <LinearLayout
+                    android:layout_below="@+id/MasjidAdresss"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Website Link"/>
+                    <EditText
+                        android:id="@+id/weblink"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@color/textcolor"
+                        android:background="@drawable/textborder"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textColor="@color/botomcolor"
+                        android:textColorHint="@color/hintcolor" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/MasjidRegCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/textborder"
+                    android:gravity="center"
+                    android:minHeight="55dp"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/botomcolor"
+
+                    />
+                <Button
+                    android:id="@+id/MasjidRegistration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:minHeight="55dp"
+                    android:background="@drawable/btn_close_design"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/register"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

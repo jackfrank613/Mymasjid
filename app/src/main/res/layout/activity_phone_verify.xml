@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/maintry">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textHelp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/gradientbackground"
+                android:gravity="center"
+                android:text="Verify Phone Number"
+                android:textColor="@color/textcolor"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/textcolor"
+                android:text="Phone Number"/>
+            <RelativeLayout
+                android:id="@id/layout1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:layout_below="@id/textHelp"
+                android:layout_width="match_parent"
+                android:background="@drawable/textborder"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/textcolor"
+                   />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/layout1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/btn_close_design"
+                    android:text="Send Verify code"/>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                     android:text="Didn't get a verification code."
+                    />
+
+                <TextView
+                    android:id="@+id/resend"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="try this again."/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:gravity="center"
+                    android:background="@drawable/textborder"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/textcolor"
+                    android:inputType="number"
+                    android:textCursorDrawable="@color/textcolor"
+                    android:background="@color/colortransparent"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/layout4"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--<Button-->
+                    <!--android:id="@+id/cancel"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/textborder"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:text="@string/cancel"-->
+                    <!--android:textColor="@color/textcolor"/>-->
+
+                <Button
+                    android:id="@+id/verify"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_close_design"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Verify"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/botomcolor"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

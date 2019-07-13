@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@mipmap/maintry"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+
+
+
+
+    <TextView
+        android:id="@+id/tarilReg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/Skype"
+        android:gravity="center"
+        android:text="Pay Fee By Card"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_close_design"
+            android:entries="@array/ChildName"
+            android:minHeight="60dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:popupBackground="@color/Skype">
+        </Spinner>
+
+
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textborder"
+            android:hint="Bank Name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:textColor="@color/botomcolor"
+            android:textColorHint="@color/hintcolor" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textborder"
+            android:hint="Account Title"
+            android:inputType="text"
+            android:singleLine="true"
+            android:padding="10dp"
+            app:passwordToggleEnabled="true"
+            android:textColor="@color/botomcolor"
+            android:textColorHint="@color/hintcolor" />
+        <EditText
+            android:id="@+id/REpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textborder"
+            android:hint="Sort Code"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:padding="10dp"
+            app:passwordToggleEnabled="true"
+            android:textColor="@color/botomcolor"
+            android:textColorHint="@color/hintcolor" />
+
+        <EditText
+            android:id="@+id/sureName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textborder"
+            android:hint="Total Fee(£)"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:textColor="@color/botomcolor"
+            android:textColorHint="@color/hintcolor" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btncancelCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:minHeight="55dp"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/botomcolor"
+
+            />
+
+        <Button
+            android:id="@+id/btnsendCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="@drawable/btn_close_design"
+            android:gravity="center"
+            android:padding="10dp"
+            android:minHeight="55dp"
+            android:text="Send"
+            android:textColor="@color/textcolor" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

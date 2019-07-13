@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/maintry"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Buttons"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtsalah"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/gradientbackground"
+                android:gravity="center"
+                android:text="@string/ADDCHILD"
+                android:textColor="@color/textcolor"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/whitebutton">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Child Name:"
+                        />
+                    <EditText
+                        android:id="@+id/ChildNameMasjid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@drawable/whitebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Father Name:"/>
+                    <EditText
+                        android:id="@+id/FatherNameMasjid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:textColor="#FFFFFF"
+                        android:padding="10dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@drawable/whitebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Age:"/>
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/ChildAgeMasjid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="#FFFFFF"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@drawable/whitebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        app:ccp_textColor="@color/textcolor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/ChildParentContectNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@color/textcolor"
+                        android:hint="eg:+8615640481236"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="@color/hintcolor" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_close_design"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Class Days"
+                    android:textColor="@color/TextDarkColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/checkboxSunday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Sunday"
+                        android:textColor="@color/textcolor" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkboxMonday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Monday"
+                        android:textColor="@color/textcolor" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkboxTuesday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Tuesday"
+                        android:textColor="@color/textcolor" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkboxWensday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Wednesday"
+                        android:textColor="@color/textcolor" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/checkboxThrusday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Thursday"
+                        android:textColor="@color/textcolor" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkboxFriday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Friday"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+                    <CheckBox
+                        android:id="@+id/checkboxSaturday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Saturday"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/Buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnaddChildMasjidCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:minHeight="55dp"
+            android:text="@string/cancel"
+            android:textColor="@color/TextDarkColor" />
+
+        <Button
+            android:id="@+id/btnaddChildMasjidUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_close_design"
+            android:minHeight="55dp"
+            android:text="Save"
+            android:textColor="@color/textcolor" />
+    </LinearLayout>
+</RelativeLayout>

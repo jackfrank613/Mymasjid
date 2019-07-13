@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/maintry"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:src="@mipmap/bissmillah" />
+
+
+        <Button
+            android:id="@+id/AddchildUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/textborder"
+            android:minWidth="300dp"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:text="@string/ADDCHILD"
+            android:textAllCaps="false"
+            android:textColor="@color/TextDarkColor" />
+
+        <Button
+            android:id="@+id/ViewChildUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textborder"
+            android:minWidth="300dp"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:text="@string/ViewChild"
+            android:textAllCaps="false"
+            android:textColor="@color/TextDarkColor" />
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textborder"
+            android:minWidth="300dp"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/TextDarkColor" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
